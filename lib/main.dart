@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'dart:math';
+
+import 'package:flutter/services.dart';
 
 void main() {
   runApp(
@@ -28,19 +31,21 @@ class DicePage extends StatelessWidget {
       child: Row(
         children: <Widget>[
           Expanded(
-            child:Padding(
-              padding: const EdgeInsets.all(16.0),
+            child: FlatButton(
               child: Image.asset('images/dice1.png'),
+              onPressed: (){
+              },
             ),
           ),
           Expanded(
-            child:Padding(
-              padding: const EdgeInsets.all(16.0),
+            child: FlatButton(
               child: Image.asset('images/dice2.png'),
+              onPressed: (){
+              },
             ),
           ),
         ],
       ),
     );
-  }
-}
+  } //build
+} //DicePage
